@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cronômetro</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="assets/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+    
+</head>
+<body>
+    <div class="conteiner-informacao">
+        <form id="adicionarRetroativo">
+            <div class="input">
+                <div>
+                <h1>Horas:</h1><input  type="number" min="00" max="99" name="" id="horas" value="" pattern="^[0][0-9]$">
+                </div>
+                <div>
+                <h1>Minutos:</h1><input min="0" max="59" type="number" name="" id="minutos" value="" pattern="[0-5][0-9]">
+                </div>
+                <div>
+                <h1>Segundos:</h1><input min="0" max="59" type="number" name="" id="segundos"value="" pattern="[0-5][0-9]" >
+                </div>
+            </div>
+            <div class="informacao">
+            <button type="submit" id="retroativo">
+                Temporizador
+            </button>
+            </div>
+        </form>
+       
+    </div>
+        <div class="conteiner-principal">
+       
+
+            <div class="display">
+
+                <h1>
+                    <span id="display-horas" >
+                        00
+                    </span>:
+                    <span id="display-minutos">
+                        00
+                    </span>:<span id="display-segundos">
+                        00
+                    </span>
+                </h1>
+                <div class="conteiner-secundario">
+                    <button id="Iniciar" type="submit">
+                        Iniciar
+                    </button>
+                    <button id="Parar" type="submit">
+                        Parar
+                    </button>
+                    <button id="Reiniciar" type="submit">
+                        Reiniciar
+                    </button>
+                    <button id="gravar" type="submit">
+                        Gravar
+                    </button>
+                
+                </div>
+
+            </div>
+        </div>
+        <div class="conteiner-principal 2">
+            <div class="display">
+
+                <h1>
+                    <span id="display-horas-2" >
+                        00
+                    </span>:
+                    <span id="display-minutos-2">
+                        00
+                    </span>:<span id="display-segundos-2">
+                        00
+                    </span>
+                </h1>
+                <div class="conteiner-secundario 2">
+                    <button class="botaoTemporizador" id="IniciarTemporizador">
+                        Iniciar temporizador
+                    </button>
+                    <button id="ReiniciarTemporizador" class="botaoTemporizador" type="submit">
+                        Reiniciar Temporizador
+                    </button>  
+                    <button class="botaoTemporizador" id="gravarTemporizador" type="submit">
+                        Gravar Temporizador
+                    </button>             
+                </div>
+
+            </div>
+        </div>
+    <div class="conteiner-tabela">
+            <div class="tabelaCronometro">
+                <table class="tabela-informativa-cronometro" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <td colspan="5" class="principal-tabela">
+                                Veja suas ultimas atividades Cronômetro
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody id="lista">
+                        <tr class="tabela-cal-negrito">
+                            <td>
+                                Horas
+                            </td>
+                            <td>
+                                Minutos
+                            </td>
+                            <td>
+                                Segundos
+                            </td>
+                        </tr>
+                    </tbody>
+            </div>
+            <div class="tabelaCronometro">
+                <table class="tabela-informativa-temporizador" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <td colspan="5" class="principal-tabela">
+                                Veja suas ultimas atividades Temporizador
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody id="listaTemporizador">
+                        <tr class="tabela-cal-negrito">
+                            <td>
+                                Horas
+                            </td>
+                            <td>
+                                Minutos
+                            </td>
+                            <td>
+                                Segundos
+                            </td>
+                        </tr>
+                    </tbody>
+            </div>
+            
+    </div>
+
+    </tbody>
+            
+    <script src='assets/js/script.js' charset="utf-8"></script>
+</body>
+</html>
